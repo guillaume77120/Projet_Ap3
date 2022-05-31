@@ -1,0 +1,96 @@
+
+<section class="hero">
+    <div class="container">
+
+        <section class="shoping-cart spad">
+
+
+
+            <div class="container" >
+
+                <div class="row">
+                    <%- include ('apparence/popupAjtFond')-%>
+                    <button type="button" style="background-color: white; border:none"  onclick="suppAll('fonds_photos')"><img src="img/icones/sup.png"></button>
+                                    <div class="col-lg-12">
+                                        <div class="shoping__cart__table">
+                                            <table>
+                                                <tbody>
+                                               <% locals.resultFonds.forEach(function(fond) { %>
+
+                                                    <tr>
+                                                        <td class="shoping__cart__item">
+                                                            <%= fond.libel %>
+                                                        </td>
+                                                        <td class="shoping__cart__item">
+                                                            <div class="latest-product__item__pic"> <img src="img/<%= fond.photo %>"> </div>
+                                                        </td>
+
+                                                        <td>
+                                                            <button type="button" style="background-color: white; border:none"  onclick="Visibility('<%= i %>Produit')"><img src="img/icones/modify.png"></button>
+                                                        </td>
+                                                        <td class="shoping__cart__item__close">
+                                                            <span class="icon_close"></span>
+                                                        </td>
+                                                    </tr>
+                                                <% }) %>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+
+                    <!-- inclusion de la popup -->
+
+
+
+                    <%- include ('apparence/popupAjtProduit')-%>
+
+                    <button type="button" style="background-color: white; border:none"  onclick="suppAll('produits')"><img src="img/icones/sup.png"></button>
+
+                    <div class="col-lg-12">
+                        <div class="shoping__cart__table">
+                            <table>
+                                <tbody>
+
+
+                                    <% if(locals.result){
+                                        var i = 0
+
+
+                                    locals.result.forEach(function(product) { %>
+                                    <tr>
+                                        <td class="shoping__cart__item">
+                                            <a style="display:block" id="<%= i %>Produit" ><%= product.libelle %></a>
+                                            <input name="<%= i %>Produit" style="display:none" id="<%= i %>Produit" value="<%= product.libelle %>"></input>
+                                        </td>
+                                        <td class="shoping__cart__item">
+                                            <div class="latest-product__item__pic"> <img style="background-image : url(img/<%= product.photo %>);  " src="img/<%= product.LienPhoto1 %>"> </div>
+
+                                        </td>
+
+                                        <td>
+                                            <button type="button" style="background-color: white; border:none; border-color: red;"  onclick="Visibility('<%= i %>Produit')"><img src="img/icones/modify.png"></button>
+                                        </td>
+                                        <td class="shoping__cart__item__close">
+                                            <span class="icon_close"></span>
+                                        </td>
+                                    </tr>
+                                    <% i++ } ) } %>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+        </section>
+    </div>
+</section>
+
+
+

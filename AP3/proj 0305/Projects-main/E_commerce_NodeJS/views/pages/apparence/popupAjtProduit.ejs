@@ -1,0 +1,96 @@
+<!-- Pop up fenêtre qui permet d'ajouter un produit -->
+
+<p>
+  <button
+    style="
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #7fad38;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+    "
+    class="button"
+    data-modal="modalOne"
+  >
+    Ajouter un produit
+  </button>
+</p>
+
+<div id="modalOne" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <a class="close">&times;</a>
+      <form
+        id="uploadForm"
+        action="/administration"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <h2>Ajouter un produit</h2>
+        <div>
+          <input type="text" name="libel" placeholder="Libellé" />
+          <input type="text" name="categ" placeholder="Catégorie" />
+          <input type="text" name="prix" placeholder="Prix" />
+
+          <label for="pet-select">Choisissez un fond pour votre photo:</label>
+          <br /><br />
+          <select name="fonds" id="fond-select">
+            <option value="">--Aucun fond choisi--</option>
+            <% locals.resultFonds.forEach(function(fond) { %>
+
+            <option value="<%= fond.id %>"><%= fond.libel %></option>
+
+            <% }) %>
+          </select>
+          <br /><br /><br /><br />
+          <p>Photo du produit</p>
+          <input type="file" name="images[]" id="fileInput" multiple />
+          <!--  <input type="submit" name="submit" value="UPLOAD"/>
+                    <div id="uploadStatus"></div> -->
+        </div>
+        <span>Description du produit</span>
+        <div>
+          <textarea name="descProd" rows="4"></textarea>
+        </div>
+        <button type="submit" href="/">Ajouter le produit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  var modalBtns = [...document.querySelectorAll(".button")];
+  modalBtns.forEach(function (btn) {
+    btn.onclick = function () {
+      var modal = btn.getAttribute("data-modal");
+      document.getElementById(modal).style.display = "block";
+    };
+  });
+
+  var closeBtns = [...document.querySelectorAll(".close")];
+  closeBtns.forEach(function (btn) {
+    btn.onclick = function () {
+      var modal = btn.closest(".modal");
+      modal.style.display = "none";
+    };
+  });
+
+  window.onclick = function (event) {
+    if (event.target.className === "modal") {
+      event.target.style.display = "none";
+    }
+  };
+  function suppAll(table) {
+    //gère le bouton modifier
+    $.ajax({
+      type: "POST",
+      url: "/administration",
+      data: { table: table },
+      success: function () {
+        location.reload();
+      },
+    });
+  }
+</script>

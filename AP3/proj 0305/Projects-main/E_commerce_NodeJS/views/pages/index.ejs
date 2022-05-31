@@ -1,0 +1,58 @@
+<%- include('jsView/functions.js') -%>
+<%- include ('header') -%>
+
+<%
+if (locals.tabs) 
+{
+    if(tabs == 'inscription_form')
+    {
+%>
+    <%-include ('login')-%>
+<%
+    }
+    else if(tabs == 'contact')
+    {
+%>
+    <%-include ('contact')-%>
+<%
+    }
+    else if(tabs == 'shop')
+    {
+%>
+    <%-include ('shop')-%>
+<%
+}
+else if(tabs == 'profile')
+{
+%>
+    <%-include ('profile')-%>
+<%
+    }
+    else if(tabs == 'panier')
+    {
+%>
+    <%-include ('panier')-%>
+<%
+    }
+    else if(tabs == 'viewproduit')
+    {
+%>
+    <%-include ('viewproduit')-%>
+<%
+    }
+    else if(tabs == 'administration')
+    {
+%>
+    <%-include ('administration')-%>
+<%
+}
+}
+else 
+{
+%>
+    <%- include('acceuil') -%>
+<%
+}
+%>
+<%-include ('footer') -%>
+

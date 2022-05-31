@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Ogani Template" />
+    <meta name="keywords" content="Ogani, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>M2L Natation</title>
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+      <div class="humberger__menu__logo">
+        <a href="#"><img src="img/logo.png" alt="" /></a>
+      </div>
+      <div class="humberger__menu__cart">
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-shopping-bag"></i> <span>3</span></a>
+          </li>
+        </ul>
+        <div class="header__cart__price">item:7</div>
+      </div>
+      <div class="humberger__menu__widget">
+        <div class="header__top__right__auth">
+          <a href="men"><i class="fa fa-user"></i> Connexion</a>
+        </div>
+      </div>
+      <nav class="humberger__menu__nav mobile-menu">
+        <ul>
+          <li class="active"><a href="/">Acceuil</a></li>
+          <li><a href="/shop">Produits</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="mobile-menu-wrap"></div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="header__top__left">
+                <div class="header__logo"></div>
+                <nav class="header__menu">
+                  <ul>
+
+                      <li class="active"><a href="/">Accueil</a></li>
+                      <li><a href="/shop">Produits</a></li>
+                      <li><a href="/contact">Contact</a></li>
+                    </tr>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="header__top__right">
+              <div class="header__top__right__language">
+                <div class="fa fa-user">
+                  <%=locals.prenom %><a class="arrow_carrot-down"></a>
+                </div>
+
+                <ul>
+                  <li><a href="/profile">Mes informations</a></li>
+                  <li><a href="/commande">Commandes</a></li>
+                  <li><a href="/administration">Administration</a></li>
+                </ul>
+              </div>
+              <div class="header__top__right__auth">
+                <div class="row align-items-center h-100">
+                  
+                  <div class="header__cart">
+                    <ul>
+                      <li>
+                        <a href="/panier"
+                          ><i class="fa fa-shopping-bag"></i> <span>0</span></a
+                        >
+                      </li>
+                    </ul>
+                    <div class="header__cart__price"><a href="/panier"><strong>Panier</strong></a></div>
+                  </div>
+                  <a href="#">
+                    <% if(locals.prenom === undefined){ %> <%- include
+                    ('apparence/popup')-%> <% } else { %>
+                    <button
+                      type="button"
+                      class="btn cancel"
+                      onclick="location.href='/deco'"
+                      id="btn__header_placement"
+                    >
+                      Deconnexion
+                    </button>
+                    <% } %>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3"></div>
+
+          <div class="col-lg-3">
+
+          </div>
+        </div>
+        <div class="humberger__open">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+  </body>
+</html>

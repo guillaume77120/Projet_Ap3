@@ -1,0 +1,26 @@
+<!-- Pannel avec la redirection vers la connexion ou l'inscription -->
+<script>
+function openForm() {
+if(document.getElementById("myForm").style.display !== "block")
+    document.getElementById("myForm").style.display = "block";
+else
+    document.getElementById("myForm").style.display = "none";
+}
+
+</script>
+
+<button class="open-button" onclick="openForm()">Connexion</button>
+
+<div class="form-popup" id="myForm">
+    <form action="/inscription_form" class="form-container" method="post">
+
+        <label for="Email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="Email" required>
+
+        <label for="Password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="Password" required>
+
+        <button type="submit" class="btn">Connexion</button>
+        <button type="button" class="btn cancel" onclick="location.href='/inscription_form'" >S'inscrire</button>
+    </form>
+</div>

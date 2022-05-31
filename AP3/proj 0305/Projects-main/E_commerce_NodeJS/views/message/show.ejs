@@ -1,0 +1,26 @@
+<%- include ('../pages/header') -%>
+
+
+
+<div class="ui comments">
+
+    <div class="comment">
+    <a class="avatar" href="/message/<%= message.id %>">
+        <img src="../img/tech.png" >
+    </a>
+        <div class="content">
+             <div class="metadata">
+                <div class="date">
+
+                <%= message.create_at.fromNow() %>
+
+                 </div>
+             </div>
+
+            <div class="test"> <%= message.content %></div>
+        </div>
+    </div>
+</div>
+
+<%- include ('../pages/header') -%>
+

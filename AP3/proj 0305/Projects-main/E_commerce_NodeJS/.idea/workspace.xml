@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e523b6fe-d3fc-43e8-a518-a0ec482db8bc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1octDv2dTl9eLE5zu2SVGAU3kWu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/pages/apparence" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Julian\Documents\projet\konix\code\konixSite\test\views\pages\apparence" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Julian\Documents\projet\konix\code\konixSite\test\img" />
+      <recent name="C:\Users\Julian\Documents\projet\konix\code\konixSite\test\views\pages\apparence" />
+      <recent name="C:\Users\Julian\Documents\projet\konix\code\konixSite\test\views" />
+      <recent name="C:\Users\Julian\Documents\projet\konix\code\konixSite\test" />
+      <recent name="C:\Users\Julian\Documents\projet\konix\code\konixSite\test\views\pages" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e523b6fe-d3fc-43e8-a518-a0ec482db8bc" name="Default Changelist" comment="" />
+      <created>1613597591952</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613597591952</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="730" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623424350231">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="730" y="322" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1280.693/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619472594492" />
+    <state x="730" y="322" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1040/-1920.0.1280.680/0.0.1920.1040@0.0.1920.1040" timestamp="1623424350231" />
+    <state x="911" y="261" key="FileChooserDialogImpl" timestamp="1622718287357">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="911" y="261" key="FileChooserDialogImpl/1920.0.1920.1040/-1920.0.1280.680/0.0.1920.1040@0.0.1920.1040" timestamp="1622718287357" />
+    <state x="581" y="140" width="1101" height="759" key="new project wizard" timestamp="1626448090243">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="581" y="140" width="1101" height="759" key="new project wizard/1920.0.1920.1040/-1920.0.1280.680/0.0.1920.1040@0.0.1920.1040" timestamp="1626448090243" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1623864686844">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1623864686844" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/1920.0.1920.1040/-1920.0.1280.680/0.0.1920.1040@0.0.1920.1040" timestamp="1623422526944" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1621887122223">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/-1920.0.1280.680/0.0.1920.1040@0.0.1920.1040" timestamp="1621887122223" />
+  </component>
+</project>

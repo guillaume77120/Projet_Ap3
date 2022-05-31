@@ -1,0 +1,45 @@
+<!-- Page administration Pop up fenêtre ajouter un fond -->
+
+
+<p>
+  <button
+    style="
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #7fad38;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+    "
+    class="button"
+    data-modal="modalTwo"
+  >
+    Ajouter un Fond
+  </button>
+</p>
+
+<div id="modalTwo" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <a class="close">&times;</a>
+      <form
+        id="uploadForm"
+        action="/administration"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <h2>Ajouter un Fond</h2>
+        <div>
+          <input type="text" name="libelFond" placeholder="Libellé" />
+
+          <p>Choisissez une image</p>
+          <input type="file" name="images[]" id="fileInput" multiple />
+          <!--  <input type="submit" name="submit" value="UPLOAD"/>
+                    <div id="uploadStatus"></div> -->
+        </div>
+        <button type="submit" href="/">Ajouter un fond</button>
+      </form>
+    </div>
+  </div>
+</div>

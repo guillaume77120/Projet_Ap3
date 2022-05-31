@@ -1,0 +1,102 @@
+<section class="hero">
+    <div class="container">
+
+        <section class="shoping-cart spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="shoping__cart__table">
+                            <table>
+                                <tbody>
+                                <form id="myFormPrf" action="/profile" method="post" class="ui form">
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <a style="display:block" id="Nom" ><%= locals.result.Nom %></a>
+                                        <input name="Nom" style="display:none" id="Nom2" value="<%= locals.result.Nom %>"></input>
+                                    </td>
+
+                                    <td>
+                                        <button type="button" style="background-color: white; border:none"  onclick="Visibility('Nom')"><img src="img/icones/modify.png"></button>
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <span class="icon_close"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+
+                                        <a style="display:block" id="Prenom" ><%= locals.result.Prenom %></a>
+                                        <input name="Prenom" style="display:none" id="Prenom2" value="<%= locals.result.Prenom %>"></input>
+                                    </td>
+
+                                    <td>
+                                        <button type="button" style="background-color: white; border:none" onclick="Visibility('Prenom')"><img src="img/icones/modify.png"></button>
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <span class="icon_close"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+
+                                        <a style="display:block" id="Email" ><%= locals.result.Email %></a>
+                                        <input name="Email" style="display:none" id="Email2" value="<%= locals.result.Email %>"></input>
+                                    </td>
+
+                                    <td>
+                                        <button type="button" style="background-color: white; border:none" onclick="Visibility('Email')"><img src="img/icones/modify.png"></button>
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <span class="icon_close"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+
+                                        <a style="display:block" id="Age" ><%= locals.result.Age %></a>
+                                        <input name="Age" style="display:none" id="Age2" value="<%= locals.result.Age %>"></input>
+                                    </td>
+
+                                    <td>
+                                        <button type="button" style="background-color: white; border:none" onclick="Visibility('Age')"><img src="img/icones/modify.png"></button>
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <span class="icon_close"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+
+                                        <a  style="display:block" id="adresse" ><%= locals.result.adresse %></a>
+                                        <input name="adresse" style="display:none" id="adresse2" value="<%= locals.result.adresse %>"></input>
+                                    </td>
+
+                                    <td>
+                                        <button type="button" style="background-color: white; border:none" onclick="Visibility('adresse')"><img src="img/icones/modify.png"></button>
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <span class="icon_close"></span>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="shoping__cart__btns">
+                            
+                            <a href="/" class="primary-btn cart-btn">
+                                Acceuil</a>
+                        </div>
+                    </div>
+                </form>
+                    
+                   
+                </div>
+            </div>
+        </section>
+</div>
+</section>

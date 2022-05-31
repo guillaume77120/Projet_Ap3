@@ -1,0 +1,55 @@
+
+<!-- Hero Section Begin -->
+<div class="hero__item set-bg" >
+    <div class="hero__text"></div>
+  </div>
+  <div class="mb-4">
+  <!-- Hero Section End -->
+  
+  <!-- Breadcrumb Section Begin -->
+  
+  
+  </section>
+  <!-- Breadcrumb Section End -->
+  
+  <!-- Product Section Begin -->
+  <section class="product spad">
+    <div class="container">
+     
+        <div class="col-lg-9 col-md-4">
+          
+           
+          <div class="row">
+            <% if(locals.result){ locals.result.forEach(function(product) { %>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="product__item">
+                      <div
+                        class="product__item__pic set-bg"
+                        data-setbg="img/<%= product.LienPhoto1 %>"
+                      >
+                        
+                      </div>
+                      <div class="product__item__text">
+                        <h6><%= product.libelle %></a></h6>
+                    <h5><%= product.prix %>€</h5>
+                <h6><%= product.description %>€</h6>
+
+                      </div>
+                    </div>
+                  </div>
+            
+                    
+                    
+                 
+                 
+                  
+            <% }) } %>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Product Section End -->
+</div>
+  
